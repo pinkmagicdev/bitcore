@@ -7,30 +7,30 @@ var hex = function(hex) {
 exports.livenet = {
   name: 'livenet',
   magic: hex('70352205'),
-  addressVersion: 0x19,
+  addressVersion: 0x3f,
   privKeyVersion: 153,
-  P2SHVersion: 85,
+  P2SHVersion: 125,
   hkeyPublicVersion: 0x02cfbede,
   hkeyPrivateVersion: 0x02cfbf60,
   genesisBlock: {
-    hash: hex('000001FAEF25DEC4FBCF906E6242621DF2C183BF232F263D0BA5B101911E4563'),
-    merkle_root: hex('12630D16A97F24B287C8C2594DDA5FB98C9E6C70FC61D44191931EA2AA08DC90'),
+    hash: hex('000005A3B4890B53D3ECEF70FFD1DB15F3D4C57EE211712396D06167AE75384E'),
+    merkle_root: hex('AA74E9CCBB2F003DA48576A5C4499427347211C409C256758649EDDEE2BA1AB9'),
     height: 0,
-    nonce: 164482,
+    nonce: 2533105,
     version: 1,
     prev_hash: buffertools.fill(new Buffer(32), 0),
-    timestamp: 1393221600,
+    timestamp: 1449624234,
     bits: 504365055,
   },
   dnsSeeds: [
-    'rat4.blackcoin.co',
-	'seed.blackcoin.co',
-	'archon.darkfox.id.au',
-	'foxy.seeds.darkfox.id.au',
-	'6.syllabear.us.to',
-	'bcseed.syllabear.us.to'
+    '',
+	'',
+	'',
+	'',
+	'',
+	''
   ],
-  defaultClientPort: 15714
+  defaultClientPort: 1337
 };
 
 exports.mainnet = exports.livenet;
